@@ -126,6 +126,72 @@ button{
 button:hover{
     background:#1f6f4a;
 }
+
+.product-showcase{
+    background:linear-gradient(135deg,#1a1a1a,#2d2d2d);
+    text-align:center;
+}
+
+.product-showcase .section-title{
+    color:#3ba55d;
+}
+
+.product-showcase-content{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:50px;
+    flex-wrap:wrap;
+    max-width:1000px;
+    margin:auto;
+}
+
+.product-image{
+    flex:1;
+    min-width:250px;
+    max-width:350px;
+}
+
+.product-image img{
+    width:100%;
+    border-radius:15px;
+    box-shadow:0 10px 40px rgba(59,165,93,0.3);
+}
+
+.product-info{
+    flex:1;
+    min-width:280px;
+    text-align:left;
+    color:#e0e0e0;
+}
+
+.product-info h3{
+    font-size:26px;
+    color:#3ba55d;
+    margin-bottom:15px;
+}
+
+.product-info p{
+    font-size:16px;
+    line-height:1.7;
+    margin-bottom:15px;
+}
+
+.product-info ul{
+    list-style:none;
+    padding:0;
+}
+
+.product-info ul li{
+    padding:6px 0;
+    font-size:15px;
+}
+
+.product-info ul li::before{
+    content:"✓ ";
+    color:#3ba55d;
+    font-weight:bold;
+}
 </style>
 </head>
 <body>
@@ -135,6 +201,27 @@ button:hover{
     <p>Smart AI Recycling Bin System for a Cleaner, Greener Future.</p>
     <button>Learn More</button>
 </header>
+
+<section class="product-showcase">
+    <h2 class="section-title">Our Product</h2>
+    <div class="product-showcase-content">
+        <div class="product-image">
+            <img src="ecosnap-product.jpg" alt="EcoSnap+ Smart AI Recycling Bin">
+        </div>
+        <div class="product-info">
+            <h3>EcoSnap+ Smart Recycling Bin</h3>
+            <p>An AI-powered smart bin designed to revolutionize waste management with intelligent sorting and real-time user feedback.</p>
+            <ul>
+                <li>AI-powered waste recognition with HD 8MP camera</li>
+                <li>Full HD interactive display with live feedback</li>
+                <li>Sealed lids &amp; carbon filters for odour control</li>
+                <li>Stainless steel build for durability &amp; hygiene</li>
+                <li>QR-based EcoPoint rewards system</li>
+            </ul>
+            <button>Get Started</button>
+        </div>
+    </div>
+</section>
 
 <section>
     <h2 class="section-title">Our Objective</h2>
