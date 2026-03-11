@@ -126,18 +126,324 @@ button{
 button:hover{
     background:#1f6f4a;
 }
+
+.product-showcase{
+    background:linear-gradient(135deg,#1a1a1a,#2d2d2d);
+    text-align:center;
+}
+
+.product-showcase .section-title{
+    color:#3ba55d;
+}
+
+.product-showcase-content{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:50px;
+    flex-wrap:wrap;
+    max-width:1000px;
+    margin:auto;
+}
+
+.product-image{
+    flex:1;
+    min-width:250px;
+    max-width:350px;
+}
+
+.product-image img{
+    width:100%;
+    border-radius:15px;
+    box-shadow:0 10px 40px rgba(59,165,93,0.3);
+}
+
+.product-info{
+    flex:1;
+    min-width:280px;
+    text-align:left;
+    color:#e0e0e0;
+}
+
+.product-info h3{
+    font-size:26px;
+    color:#3ba55d;
+    margin-bottom:15px;
+}
+
+.product-info p{
+    font-size:16px;
+    line-height:1.7;
+    margin-bottom:15px;
+}
+
+.product-info ul{
+    list-style:none;
+    padding:0;
+}
+
+.product-info ul li{
+    padding:6px 0;
+    font-size:15px;
+}
+
+.product-info ul li::before{
+    content:"✓ ";
+    color:#3ba55d;
+    font-weight:bold;
+}
+
+.what-is{
+    background:#fff;
+    text-align:center;
+}
+
+.what-is p{
+    max-width:800px;
+    margin:0 auto 15px;
+    font-size:16px;
+    line-height:1.8;
+}
+
+.what-is-highlights{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:15px;
+    margin-top:20px;
+}
+
+.what-is-highlights span{
+    background:#e8f5e9;
+    padding:10px 20px;
+    border-radius:25px;
+    font-size:14px;
+    font-weight:500;
+    color:#1f6f4a;
+}
+
+.objective-detail{
+    max-width:800px;
+    margin:0 auto 30px;
+    text-align:center;
+    font-size:16px;
+    line-height:1.8;
+}
+
+.description-service{
+    background:#fff;
+}
+
+.description-service p{
+    max-width:800px;
+    margin:auto;
+    font-size:16px;
+    line-height:1.8;
+    text-align:center;
+}
+
+.how-it-works{
+    background:#e8f5e9;
+}
+
+.steps-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+    max-width:1100px;
+    margin:auto;
+}
+
+.step{
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.08);
+    text-align:center;
+    transition:0.3s;
+}
+
+.step:hover{
+    transform:translateY(-5px);
+}
+
+.step-number{
+    display:inline-block;
+    width:40px;
+    height:40px;
+    background:#3ba55d;
+    color:white;
+    border-radius:50%;
+    line-height:40px;
+    font-weight:bold;
+    font-size:18px;
+    margin-bottom:15px;
+}
+
+.step h3{
+    color:#1f6f4a;
+    margin-bottom:10px;
+}
+
+.step ul{
+    list-style:none;
+    padding:0;
+    text-align:left;
+}
+
+.step ul li{
+    padding:4px 0;
+    font-size:14px;
+}
+
+.step ul li::before{
+    content:"• ";
+    color:#3ba55d;
+    font-weight:bold;
+}
+
+.why-pays{
+    background:#fff;
+}
+
+.why-pays-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+    max-width:1000px;
+    margin:auto;
+}
+
+.why-pays-item{
+    background:#f4f9f4;
+    padding:25px;
+    border-radius:15px;
+    text-align:center;
+    border-left:4px solid #3ba55d;
+}
+
+.why-pays-item p{
+    font-size:15px;
+    line-height:1.6;
+}
+
+.why-pays-quote{
+    max-width:800px;
+    margin:30px auto 0;
+    text-align:center;
+    font-style:italic;
+    font-size:15px;
+    color:#555;
+    line-height:1.7;
+}
+
+.target-users{
+    background:#e8f5e9;
+    text-align:center;
+}
+
+.target-users p{
+    max-width:700px;
+    margin:auto;
+    font-size:17px;
+    line-height:1.8;
+}
+
+.benefits{
+    background:#fff;
+}
+
+.benefits p{
+    max-width:800px;
+    margin:auto;
+    font-size:16px;
+    line-height:1.8;
+    text-align:center;
+}
+
+.why-different{
+    background:linear-gradient(135deg,#1a1a1a,#2d2d2d);
+    color:white;
+}
+
+.why-different .section-title{
+    color:#3ba55d;
+}
+
+.diff-list{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+    max-width:1000px;
+    margin:auto;
+}
+
+.diff-item{
+    background:rgba(59,165,93,0.1);
+    border:1px solid rgba(59,165,93,0.3);
+    padding:25px;
+    border-radius:15px;
+    text-align:center;
+    color:#e0e0e0;
+    font-size:15px;
+    transition:0.3s;
+}
+
+.diff-item:hover{
+    background:rgba(59,165,93,0.2);
+    transform:translateY(-3px);
+}
+
+.testimony p{
+    font-size:15px;
+    line-height:1.8;
+}
 </style>
 </head>
 <body>
 
 <header>
     <h1>EcoSnap+</h1>
-    <p>Smart AI Recycling Bin System for a Cleaner, Greener Future.</p>
+    <p>Recycle Smart. Engage Students. Build a Green Campus.</p>
     <button>Learn More</button>
 </header>
 
+<section class="product-showcase">
+    <h2 class="section-title">Our Product</h2>
+    <div class="product-showcase-content">
+        <div class="product-image">
+            <img src="ecosnap-product.jpg" alt="EcoSnap+ Smart AI Recycling Bin">
+        </div>
+        <div class="product-info">
+            <h3>EcoSnap+ Smart Recycling Bin</h3>
+            <p>An AI-powered smart bin designed to revolutionize waste management with intelligent sorting and real-time user feedback.</p>
+            <ul>
+                <li>AI-powered waste recognition with HD 8MP camera</li>
+                <li>Full HD interactive display with live feedback</li>
+                <li>Sealed lids &amp; carbon filters for odour control</li>
+                <li>Stainless steel build for durability &amp; hygiene</li>
+                <li>QR-based EcoPoint rewards system</li>
+            </ul>
+            <button>Get Started</button>
+        </div>
+    </div>
+</section>
+
+<section class="what-is">
+    <h2 class="section-title">What is EcoSnap+?</h2>
+    <p>A private school sustainability service where students recycle for free and the school pays for a fully managed environmental solution. EcoSnap+ combines smart technology with engagement programs to make recycling fun, competitive, and impactful.</p>
+    <div class="what-is-highlights">
+        <span>Smart Bins</span>
+        <span>Digital Tracking</span>
+        <span>Rewards &amp; Competitions</span>
+        <span>Reporting &amp; Analytics</span>
+        <span>Education Campaigns</span>
+    </div>
+</section>
+
 <section>
     <h2 class="section-title">Our Objective</h2>
+    <p class="objective-detail">Plastic waste is one of the world's most pressing health and environmental concerns. Despite high awareness, nearly two-thirds of Malaysia's waste is still disposed of improperly, leading to a national recycling rate of only 33% and significant microplastic contamination. EcoSnap+ aims to bridge this gap by replacing outdated, voluntary systems with AI-driven smart bins that eliminate sorting errors and foul odours. By integrating digital tracking and EcoPoint rewards, we transform recycling from an inconsistent chore into a measurable, incentivised habit.</p>
     <div class="card-container">
         <div class="card">
             <h3>Reduce Waste Mismanagement</h3>
@@ -172,36 +478,141 @@ button:hover{
     </div>
 </section>
 
+<section class="description-service">
+    <h2 class="section-title">Description of Service</h2>
+    <p>EcoSnap+ provides a turnkey environmental management solution tailored for elite educational environments. Our service goes beyond hardware &mdash; we provide a fully managed ecosystem, from AI-powered waste segregation and regular technical maintenance to real-time sustainability analytics and student reward programs. Our project also uses sensors that can detect the fill level of the bin. We handle the complexities of waste logistics so your institution can focus on delivering a world-class, eco-conscious school experience.</p>
+</section>
+
+<section class="how-it-works">
+    <h2 class="section-title">How It Works</h2>
+    <div class="steps-container">
+        <div class="step">
+            <div class="step-number">1</div>
+            <h3>Smart Recycling Bins</h3>
+            <ul>
+                <li>Odour-controlled (sealed lids + carbon filters)</li>
+                <li>Separate sections: paper, plastic, cans</li>
+                <li>Weekly maintenance included</li>
+            </ul>
+        </div>
+        <div class="step">
+            <div class="step-number">2</div>
+            <h3>Digital Tracking &amp; Rewards</h3>
+            <ul>
+                <li>Scan QR code to earn EcoPoints</li>
+                <li>Redeem points: printing credits, bookstore vouchers</li>
+            </ul>
+        </div>
+        <div class="step">
+            <div class="step-number">3</div>
+            <h3>Class/Faculty Competitions</h3>
+            <ul>
+                <li>Leaderboards track monthly recycling</li>
+                <li>Winning class gets free cafeteria meals</li>
+                <li>Encourages teamwork &amp; healthy rivalry</li>
+            </ul>
+        </div>
+        <div class="step">
+            <div class="step-number">4</div>
+            <h3>Reporting &amp; Analytics</h3>
+            <ul>
+                <li>Monthly recycling reports</li>
+                <li>Sustainability dashboards for accreditation, SDGs, ESG</li>
+            </ul>
+        </div>
+        <div class="step">
+            <div class="step-number">5</div>
+            <h3>Awareness &amp; Education</h3>
+            <ul>
+                <li>Workshops, posters, social media campaigns</li>
+                <li>Promote long-term sustainable habits</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
 <section class="packages">
     <h2 class="section-title">Service Packages</h2>
     <div class="card-container">
+        <div class="package">
+            <h3>First Time Purchase</h3>
+            <div class="package-price">RM 1,000</div>
+            <p>6 Years Service</p>
+            <p>Maintenance Every 2 Months</p>
+            <p>Insurance &amp; Warranty for 6 Years</p>
+            <button>Select Plan</button>
+        </div>
         <div class="package">
             <h3>Package 1</h3>
             <div class="package-price">RM 1,000</div>
             <p>3 Years Service</p>
             <p>Maintenance Every 2 Months</p>
-            <p>Insurance Included</p>
+            <p>Insurance for 3 Years</p>
             <button>Select Plan</button>
         </div>
         <div class="package">
             <h3>Package 2</h3>
-            <div class="package-price">RM 2,890</div>
+            <div class="package-price">RM 1,890</div>
             <p>6 Years Service</p>
-            <p>Full Maintenance</p>
-            <p>Insurance & Warranty</p>
+            <p>Maintenance Every 2 Months</p>
+            <p>Insurance for 6 Years</p>
             <button>Select Plan</button>
         </div>
     </div>
 </section>
 
+<section class="why-pays">
+    <h2 class="section-title">Why the Private School Pays</h2>
+    <div class="why-pays-grid">
+        <div class="why-pays-item">
+            <p>Compliance &amp; reporting for green accreditation</p>
+        </div>
+        <div class="why-pays-item">
+            <p>Enhanced school branding &amp; reputation</p>
+        </div>
+        <div class="why-pays-item">
+            <p>Cost reduction in waste management</p>
+        </div>
+        <div class="why-pays-item">
+            <p>Student engagement without extra staff</p>
+        </div>
+        <div class="why-pays-item">
+            <p>Attract CSR &amp; sponsorship funding</p>
+        </div>
+    </div>
+    <p class="why-pays-quote">"EcoSnap+ provides measurable sustainability data, cost-saving waste management improvements, and strong green branding opportunities, making it a valuable long-term service rather than a simple recycling program."</p>
+</section>
+
+<section class="target-users">
+    <h2 class="section-title">Target Users</h2>
+    <p>Premier learning communities dedicated to nurturing environmentally-conscious future leaders.</p>
+</section>
+
+<section class="benefits">
+    <h2 class="section-title">Benefits of Our Service</h2>
+    <p>EcoSnap+ provides a turnkey environmental management solution tailored for elite educational environments. Our service goes beyond hardware &mdash; we provide a fully managed ecosystem, from AI-powered waste segregation and regular technical maintenance to real-time sustainability analytics and student reward programs. Our project also uses sensors that can detect the fill level of the bin. We handle the complexities of waste logistics so your institution can focus on delivering a world-class, eco-conscious school experience.</p>
+</section>
+
 <section>
     <h2 class="section-title">Testimony</h2>
-    <div class="testimony">
+    <div class=”testimony”>
         <p>
-        “EcoSnap+ has significantly improved our campus waste management system.
-        Recycling participation increased, hygiene improved, and sustainability reporting
-        became easier. It is more than a recycling solution — it’s a smart environmental platform.”
+        “EcoSnap+ has been a game-changer in improving our waste management system and promoting sustainable practices within our campus community. Before implementing EcoSnap+, recycling participation was low and waste segregation was inconsistent. With the introduction of the smart recycling bins equipped with AI sorting, odour control, and clearly separated waste categories, the recycling process has become much more efficient, hygienic, and user-friendly.</p>
+        <p>The digital tracking system and EcoPoints rewards have successfully encouraged students and staff to take an active role in recycling. By simply scanning a QR code, users can track their contributions and feel motivated through rewards and friendly competition between classes and faculties. This has created a positive culture of teamwork and environmental responsibility across the campus.</p>
+        <p>In addition, the monthly recycling reports and sustainability dashboards have greatly supported our compliance and reporting needs for green accreditation, SDGs, and ESG requirements. The system reduces operational costs, minimises the need for additional staff, and enhances our institution’s reputation as an environmentally responsible organisation.</p>
+        <p>Overall, EcoSnap+ is more than a recycling solution &mdash; it is an educational and technological platform that drives long-term behavioural change and helps build a cleaner, greener future.”
         </p>
+    </div>
+</section>
+
+<section class="why-different">
+    <h2 class="section-title">Why EcoSnap+ is Different</h2>
+    <div class="diff-list">
+        <div class="diff-item">Service-focused, not just a product</div>
+        <div class="diff-item">Odour-controlled bins</div>
+        <div class="diff-item">Gamification &amp; competitions</div>
+        <div class="diff-item">Student-friendly &amp; free for students</div>
+        <div class="diff-item">School-beneficial: data, branding, cost-saving, sponsorship</div>
     </div>
 </section>
 
